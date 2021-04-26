@@ -78,7 +78,7 @@ public class TronexPro extends TelegramLongPollingBot {
                         System.out.println(dateString);
 
 
-                        if (b > 0.04 ) {
+//                        if (b > 0.04 ) {
                             System.out.println(a);
                             message.setText(a);
                             message.setChatId(update.getMessage().getChatId());
@@ -88,14 +88,14 @@ public class TronexPro extends TelegramLongPollingBot {
                             } catch (TelegramApiException e) {
                                 e.printStackTrace();
                             }
-                        }
+//                        }
 
 
                     } catch (Exception ex) {
                         ex.printStackTrace();
                     }
                 try {
-                    Thread.sleep(31000);
+                    Thread.sleep(11000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
