@@ -34,6 +34,14 @@ public class TronexPro extends TelegramLongPollingBot {
 
 
         if (command.equals("/hi")) {
+            message.setText("start");
+            message.setChatId(update.getMessage().getChatId());
+
+            try {
+                execute(message);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
             String a = "";
             float b = 0;
             int g = 0;
