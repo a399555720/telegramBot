@@ -95,7 +95,7 @@ public class TronexPro extends TelegramLongPollingBot {
                         ex.printStackTrace();
                     }
                 try {
-                    Thread.sleep(11000);
+                    Thread.sleep(31000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
